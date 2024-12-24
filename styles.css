@@ -194,3 +194,53 @@ main {
     font-weight: 600;
     padding-left: 55px;
 }
+
+/* MAIN ITSELF FORM SUCCESS CARD LEFT BOTTOM */
+
+.main-itself-form-success-card-left-bottom {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+/* MAIN ITSELF FORM SUCCESS CARD LEFT BOTTOM PICTURE */
+
+.main-itself-form-success-card-left-bottom-picture {
+    width: 70px;
+    height: 70px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.main-itself-form-success-card-left-bottom-picture-itself {
+    width: 100%;
+}
+
+/* MAIN ITSELF FORM SUCCESS CARD LEFT BOTTOM TEXT */
+
+.main-itself-form-success-card-left-bottom-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.main-itself-form-success-card-left-bottom-text-full-name {
+    color: white;
+    font-weight: 400;
+}
+
+.main-itself-form-success-card-left-bottom-text-inner {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.main-itself-form-success-card-left-bottom-text-inner-svg {
+    width: 25px;
+    height: 25px;
+}
+
+.main-itself-form-success-card-left-bottom-text-inner-text {
+    color: white;
+    font-weight: 400;
+}
