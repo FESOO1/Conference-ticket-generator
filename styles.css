@@ -310,6 +310,15 @@ main {
     .main-itself-header-paragraph {
         font-size: 1.2rem;
     }
+    .main-itself-header-paragraph > br {
+        display: none;
+    }
+    .main-itself-form-success {
+        width: 100%;
+    }
+    .main-itself-form-success-card {
+        width: 600px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -320,6 +329,12 @@ main {
         padding-inline: 0;
     }
     .main-itself-form-itself {
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    .main-itself-form-success-card {
         width: 100%;
     }
 }
