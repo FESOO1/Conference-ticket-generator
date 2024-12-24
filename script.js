@@ -72,8 +72,8 @@ function generateTicket(e) {
         successFullNameItself.textContent = fullNameInput.value;
         successGithubNameItself.textContent = githubUsername.value;
 
-        mainItselfHeader.textContent = `Congrats, <span id="fullNameInputText">${fullNameInput.value}</span>! </br>Your ticket is ready.`;
-        mainItselfParagraph.textContent = `We've emailed your ticket to </br><span id="emailAddressText">${emailAddress.value}</span> and will send updates in</br> the run up to the event.`;
+        mainItselfHeader.innerHTML = `Congrats, <span id="fullNameInputText">${fullNameInput.value}</span>! </br>Your ticket is ready.`;
+        mainItselfParagraph.innerHTML = `We've emailed your ticket to </br><span id="emailAddressText">${emailAddress.value}</span> and will send updates in</br> the run up to the event.`;
     };
 };
 
