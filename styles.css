@@ -50,6 +50,16 @@ main {
     row-gap: 20px;
 }
 
+#fullNameInputText {
+    background: linear-gradient(90deg, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+    color: transparent;
+    background-clip: text;
+}
+
+#emailAddressText {
+    color: hsl(7, 86%, 67%);
+}
+
 .main-itself-header-itself {
     color: white;
     font-size: 4rem;
@@ -73,7 +83,7 @@ main {
 
 .main-itself-form-itself {
     width: 480px;
-    display: none;
+    display: flex;
     flex-direction: column;
     row-gap: 20px;
 }
@@ -156,11 +166,21 @@ main {
     cursor: pointer;
 }
 
-/* MAIN ITSELF FORM SUCCESS */
+/* 
+
+
+    MAIN ITSELF FORM SUCCESS
+
+
+*/
 
 .main-itself-form-success {
-    display: flex;
+    display: none;
     justify-content: center;
+}
+
+.main-itself-form-success-active {
+    display: flex;
 }
 
 /* MAIN ITSELF FORM SUCCESS CARD */
@@ -256,7 +276,7 @@ main {
 
 .main-itself-form-success-card-right-text {
     color: hsl(245, 15%, 58%);
-    font-weight: 600;
+    font-weight: 500;
     transform: rotateZ(90deg);
     font-size: 1.8rem;
 }

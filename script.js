@@ -8,6 +8,11 @@ const formItself = document.querySelector('.main-itself-form-itself');
 const formSuccess = document.querySelector('.main-itself-form-success');
 const allInputs = document.querySelectorAll('.main-itself-form-itself-input');
 const inputTypes = ['Picture', 'Full Name', 'Email Address', 'Github Username'];
+const successPictureItself = document.querySelector('.main-itself-form-success-card-left-bottom-picture-itself');
+const successFullNameItself = document.querySelector('.main-itself-form-success-card-left-bottom-text-full-name');
+const successGithubNameItself = document.querySelector('.main-itself-form-success-card-left-bottom-text-inner-text');
+const mainItselfHeader = document.querySelector('.main-itself-header-itself');
+const mainItselfParagraph = document.querySelector('.main-itself-header-paragraph');
 
 // UPLOADING PICTURE
 
@@ -17,6 +22,7 @@ uploadPictureInput.addEventListener('change', () => {
 
     reader.addEventListener('load', () => {
         // HERE I HAVE TO USE THE IMAGE ELEMENT OF SUCCES
+        successPictureItself.src = reader.result;
     });
 });
 
@@ -62,6 +68,12 @@ function generateTicket(e) {
     if (errorMessages.length === 0) {
         formItself.classList.add('main-itself-form-itself-inactive');
         formSuccess.classList.add('main-itself-form-success-active');
+
+        successFullNameItself.textContent = fullNameInput.value;
+        successGithubNameItself.textContent = githubUsername.value;
+
+        mainItselfHeader.textContent = `Congrats, <span id="fullNameInputText">${fullNameInput.value}</span>! </br>Your ticket is ready.`;
+        mainItselfParagraph.textContent = `We've emailed your ticket to </br><span id="emailAddressText">${emailAddress.value}</span> and will send updates in</br> the run up to the event.`;
     };
 };
 
