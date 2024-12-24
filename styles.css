@@ -244,3 +244,19 @@ main {
     color: white;
     font-weight: 400;
 }
+
+/* MAIN ITSELF FORM SUCCESS CARD RIGHT */
+
+.main-itself-form-success-card-right {
+    width: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-itself-form-success-card-right-text {
+    color: hsl(245, 15%, 58%);
+    font-weight: 600;
+    transform: rotateZ(90deg);
+    font-size: 1.8rem;
+}
